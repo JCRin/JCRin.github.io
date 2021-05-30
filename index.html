@@ -2,9 +2,18 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Audio</title>
+    <script type="text/javascript">
+      function playAudio() {
+        const audio = document.createElement("audio");
+        audio.src = "src/voice/悪行ポイント加算されます.mp3";
+        audio.play();
+      }
+    </script>
   </head>
   <body>
     <h1>Test</h1>
+    <p>按下以下按鈕後會撥放音樂。</p>
+    <button onclick="playAudio();">播放</button>
   </body>
 </html>
